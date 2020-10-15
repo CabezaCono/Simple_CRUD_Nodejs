@@ -1,0 +1,20 @@
+<div class="row align-item-center justify-content-center">
+    <div class="card col-sm-2 pt-4 mt-5">
+        <div class="card-header bg-dark text-white">
+            <h4>{{role.dataValues.name}}</h4>
+        </div>
+        <div class="card-body">
+            <br/>
+            <p>{{role.dataValues.description}}</p>
+            <br/>
+            <div class="mt-3 row">
+                <a href="/usuario/{{user.dataValues.id}}/editar" class="btn btn-primary btn-sm mr-2">Editar</a>
+                <form action="/usuario/{{user.dataValues.id}}" method="DELETE">
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            Eliminar
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
